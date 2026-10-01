@@ -23,7 +23,7 @@ const greeting = {
   username: "Chakradhar Chinnam",
   title: "Hi all, I'm Chakradhar Chinnam",
   subTitle: emoji(
-    "Platform Engineer at ICE Mortgage Technology. Passionate about building reliable, scalable platform infrastructure, automation, and developer experience."
+    "Platform engineering lead with hands-on ownership of architecture and implementation for large-scale distributed systems. Build delivery pipelines, traffic management, centralized logging, and infrastructure automation from the ground up, with a focus on reliability, operational efficiency, and developer experience."
   ),
   resumeLink: "", // Set to empty to hide the button until you provide your resume link
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -49,16 +49,16 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "Platform engineering, infrastructure automation, observability, and developer experience for mission-critical systems.",
+    "End-to-end platform architecture and implementation for large-scale distributed systems—from infrastructure foundations to production delivery and observability.",
   skills: [
     emoji(
-      "⚡ Automate reliable CI/CD pipelines and deployment workflows for distributed services"
+      "Design and build CI/CD platforms with Jenkins and GitHub Actions, including containerized deployment workflows for Kubernetes."
     ),
     emoji(
-      "⚡ Build infrastructure and platform tooling to improve developer productivity and stability"
+      "Architect traffic management with HAProxy and automate infrastructure provisioning and configuration with Ansible and Python."
     ),
     emoji(
-      "⚡ Improve observability, incident response, and operational reliability across cloud-native systems"
+      "Build centralized logging from scratch with Filebeat, Logstash, and Splunk to support troubleshooting and operational visibility across distributed services."
     )
   ],
 
@@ -101,6 +101,25 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "server",
       fontAwesomeClassname: "fas fa-server"
+    },
+    {skillName: "HAProxy", fontAwesomeClassname: "fas fa-network-wired"},
+    {skillName: "Jenkins", fontAwesomeClassname: "fab fa-jenkins"},
+    {skillName: "GitHub Actions", fontAwesomeClassname: "fab fa-github"},
+    {skillName: "Kubernetes", fontAwesomeClassname: "fas fa-dharmachakra"},
+    {skillName: "Ansible", fontAwesomeClassname: "fas fa-cogs"},
+    {skillName: "PowerShell", fontAwesomeClassname: "fas fa-terminal"},
+    {skillName: "Shell scripting", fontAwesomeClassname: "fas fa-terminal"},
+    {
+      skillName: "Filebeat",
+      fontAwesomeClassname: "fas fa-file-alt"
+    },
+    {
+      skillName: "Logstash",
+      fontAwesomeClassname: "fas fa-stream"
+    },
+    {
+      skillName: "Splunk",
+      fontAwesomeClassname: "fas fa-search"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -119,7 +138,7 @@ const educationInfo = {
       descBullets: []
     },
     {
-      schoolName: "VR Siddhartha Engineering College (Autonomous), Vijayawada",
+      schoolName: "VR Siddhartha Engineering College, India",
       subHeader: "Bachelor's degree, Computer Science",
       desc: "",
       descBullets: []
@@ -158,12 +177,14 @@ const workExperiences = {
       company: "ICE Mortgage Technology",
       companylogo: require("./assets/images/programmer.svg"),
       date: "Jan 2024 – Present",
-      desc: "Lead Platform Engineer focused on automating and optimizing deployment processes, reliability, and developer experience.",
+      desc: "Lead platform architecture and delivery for large-scale distributed systems, translating operational needs into production infrastructure spanning CI/CD, Kubernetes deployments, traffic management, and observability.",
       descBullets: [
-        "Lead and mentor DevOps engineers, driving best practices and continuous improvement.",
-        "Designed and implemented CI/CD pipelines using Jenkins, Docker, and Git to improve release efficiency and reliability.",
-        "Developed automation and tooling with Python, PowerShell, and shell scripting for provisioning and operational tasks.",
-        "Improved observability and high-availability through monitoring, alerting, and infrastructure hardening."
+        "Architected and implemented centralized logging from scratch with Filebeat, Logstash, and Splunk, unifying log collection, processing, and search across distributed services to support production troubleshooting.",
+        "Designed and built CI/CD infrastructure with Jenkins and GitHub Actions, establishing automated build and deployment workflows for Docker-based services on Kubernetes.",
+        "Architected and deployed HAProxy-based load balancing and request routing for large-scale distributed systems, supporting service availability and production traffic management.",
+        "Built repeatable provisioning and configuration workflows with Ansible, Python, PowerShell, and shell scripting, replacing manual infrastructure tasks with reusable automation.",
+        "Integrated monitoring, alerting, and infrastructure hardening into platform operations to strengthen reliability and support incident response across distributed environments.",
+        "Provide technical direction and mentorship to DevOps engineers, guiding implementation practices and improvements to deployment reliability, operational efficiency, and developer experience."
       ]
     },
     {
@@ -171,12 +192,12 @@ const workExperiences = {
       company: "ICE Mortgage Technology",
       companylogo: require("./assets/images/programmer.svg"),
       date: "Jan 2022 – Jan 2024",
-      desc: "DevOps engineer focusing on automation, configuration management, and release engineering.",
+      desc: "Developed platform automation and configuration management capabilities across multiple services and environments, connecting release engineering with repeatable infrastructure operations.",
       descBullets: [
-        "Automated and optimized deployment processes across multiple services and environments.",
-        "Implemented configuration management and provisioning workflows using Ansible and cloud tooling.",
-        "Authored scripts in Python and shell to streamline operational tasks and reduce manual effort.",
-        "Mentored junior engineers and contributed to operational runbooks and playbooks."
+        "Designed and implemented deployment automation across services and environments, standardizing recurring release steps to improve delivery consistency.",
+        "Built Ansible-based configuration management and cloud provisioning workflows, making environment setup and maintenance repeatable through automated configuration.",
+        "Developed reusable Python and shell utilities for recurring operational tasks, reducing manual effort and simplifying infrastructure support.",
+        "Mentored junior engineers and translated operational knowledge into runbooks and playbooks, enabling consistent execution of deployment and support procedures."
       ]
     },
     {
@@ -184,13 +205,13 @@ const workExperiences = {
       company: "ICE Mortgage Technology",
       companylogo: require("./assets/images/programmer.svg"),
       date: "May 2021 – Dec 2021",
-      desc: "Release Engineer coordinating complex software releases and ensuring smooth deployments.",
+      desc: "Managed cross-functional software release execution, coordinating engineering teams, deployment workflows, and release risks to support reliable delivery.",
       descBullets: [
-        "Coordinated cross-functional release activities, risk management, and stakeholder communication.",
-        "Managed release pipelines and automation using Docker and CI tooling.",
-        "Applied Agile release practices to reduce downtime and improve deployment predictability."
+        "Coordinated complex releases across engineering teams, tracking release risks and keeping stakeholders aligned throughout deployment execution.",
+        "Managed Docker-based release pipelines and CI automation, supporting repeatable deployment workflows across software releases.",
+        "Applied Agile release practices to structure release execution and improve deployment predictability, with a focus on minimizing service disruption."
       ]
-    },
+    }
     // Removed template experience entries
   ]
 };
@@ -223,7 +244,6 @@ const achievementSection = {
   achievementsCards: [],
   display: false // Set false to hide this section, defaults to true
 };
-
 
 // Blogs Section
 
