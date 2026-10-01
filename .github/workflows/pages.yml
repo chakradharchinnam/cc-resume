@@ -1,0 +1,55 @@
+name: Deploy resume to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: resume
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: resume/package-lock.json
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Install dependencies
+        run: npm ci
+      - name: Build website
+        run: npm run build
+        env:
+          USE_GITHUB_DATA: "false"
+          PUBLIC_URL: ${{ steps.pages.outputs.base_url }}
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: resume/build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
