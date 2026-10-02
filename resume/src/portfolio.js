@@ -188,7 +188,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Sr Analyst, Platform Engineering",
+      role: "Engineer, Platform Engineering",
       company: "ICE Mortgage Technology",
       companylogo: require("./assets/images/programmer.svg"),
       date: "Jan 2022 – Jan 2024",
