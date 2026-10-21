@@ -176,28 +176,15 @@ const workExperiences = {
       role: "Engineer, Platform Engineering",
       company: "ICE Mortgage Technology",
       companylogo: require("./assets/images/programmer.svg"),
-      date: "Jan 2024 – Present",
+      date: "Jan 2022 – Present",
       desc: "Lead platform architecture and delivery for large-scale distributed systems, translating operational needs into production infrastructure spanning CI/CD, Kubernetes deployments, traffic management, and observability.",
       descBullets: [
         "Architected and implemented centralized logging from scratch with Filebeat, Logstash, and Splunk, unifying log collection, processing, and search across distributed services to support production troubleshooting.",
         "Designed and built CI/CD infrastructure with Jenkins and GitHub Actions, establishing automated build and deployment workflows for Docker-based services on Kubernetes.",
         "Architected and deployed HAProxy-based load balancing and request routing for large-scale distributed systems, supporting service availability and production traffic management.",
-        "Built repeatable provisioning and configuration workflows with Ansible, Python, PowerShell, and shell scripting, replacing manual infrastructure tasks with reusable automation.",
+        "Built repeatable cloud provisioning, configuration management, and operational workflows with Ansible, Python, PowerShell, and shell scripting, replacing manual infrastructure tasks with reusable automation across services and environments.",
         "Integrated monitoring, alerting, and infrastructure hardening into platform operations to strengthen reliability and support incident response across distributed environments.",
-        "Provide technical direction and mentorship to DevOps engineers, guiding implementation practices and improvements to deployment reliability, operational efficiency, and developer experience."
-      ]
-    },
-    {
-      role: "Engineer, Platform Engineering",
-      company: "ICE Mortgage Technology",
-      companylogo: require("./assets/images/programmer.svg"),
-      date: "Jan 2022 – Jan 2024",
-      desc: "Developed platform automation and configuration management capabilities across multiple services and environments, connecting release engineering with repeatable infrastructure operations.",
-      descBullets: [
-        "Designed and implemented deployment automation across services and environments, standardizing recurring release steps to improve delivery consistency.",
-        "Built Ansible-based configuration management and cloud provisioning workflows, making environment setup and maintenance repeatable through automated configuration.",
-        "Developed reusable Python and shell utilities for recurring operational tasks, reducing manual effort and simplifying infrastructure support.",
-        "Mentored junior engineers and translated operational knowledge into runbooks and playbooks, enabling consistent execution of deployment and support procedures."
+        "Provide technical direction and mentorship to DevOps engineers, documenting operational knowledge in runbooks and playbooks to improve deployment reliability, operational efficiency, and developer experience."
       ]
     },
     {
